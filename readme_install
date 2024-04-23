@@ -1,0 +1,19 @@
+ ls
+    2  python
+    3  mkdir DolphinDetection/
+    4  ls
+    5  conda create -n dol python=3.8
+    6  wget https://repo.anaconda.com/miniconda/Miniconda3-py38_23.3.1-0-Linux-x86_64.sh
+    7  sha256sum Miniconda3-py38_23.3.1-0-Linux-x86_64.sh
+    8  bash Miniconda3-latest-Linux-x86_64.sh
+    9  bash Miniconda3-py38_23.3.1-0-Linux-x86_64.sh
+   10  conda list
+   11  ./conda list
+   12  ls
+   13  conda
+   14  history
+   15  bash Anaconda-latest-Linux-x86_64.sh
+   16  ls
+   17  bash Miniconda3-py38_23.3.1-0-Linux-x86_64.sh
+   18  conda
+   19  history
