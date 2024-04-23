@@ -18,7 +18,19 @@
    18  conda
    19  history
 
-
+### second terminal
+#### stuck at the point of no requirements.txt file ....
+  1  ls
+    2  conda
+    3  ls
+    4  cd DolphinDetection/
+    5  ls
+    6  conda create -n dol python=3.8
+    7  ls
+    8  conda activate dol
+    9  ls
+   10  pip install -r requirements.txt         # install packages
+   11  history
 
 
 ref:
