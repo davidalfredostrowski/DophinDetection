@@ -37,6 +37,50 @@ ls
    11  history
 
 
+(base) ubuntu@ip-172-31-31-28:~/DolphinDetection$ pip install -r requirements.txt         # install packages
+Collecting moviepy==1.0.1
+  Downloading moviepy-1.0.1.tar.gz (373 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 374.0/374.0 kB 2.6 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting numpy==1.18.1
+  Downloading numpy-1.18.1-cp38-cp38-manylinux1_x86_64.whl (20.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.6/20.6 MB 24.1 MB/s eta 0:00:00
+Collecting asynctest==0.13.0
+  Downloading asynctest-0.13.0-py3-none-any.whl (26 kB)
+Collecting mmcv==0.5.4
+  Downloading mmcv-0.5.4.tar.gz (129 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.1/129.1 kB 29.2 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting pycocotools==2.0
+  Downloading pycocotools-2.0.0.tar.gz (1.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 84.2 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [6 lines of output]
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "/tmp/pip-install-xizeqme2/pycocotools_8d650867a826408d82dae34da9161450/setup.py", line 2, in <module>
+          from Cython.Build import cythonize
+      ModuleNotFoundError: No module named 'Cython'
+      [end of output]
+
+
+
+
+## dropped out...
+
+
+
+
+
+
+
+
+
 ref:
 
 https://medium.com/@anarmammadli/how-to-install-conda-on-ubuntu-b6e67f15a4dd
