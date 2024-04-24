@@ -126,3 +126,4 @@ Collecting PyYAML==5.3.1
 ref:
 https://stackoverflow.com/questions/43982543/importerror-no-module-named-cython
 https://medium.com/@anarmammadli/how-to-install-conda-on-ubuntu-b6e67f15a4dd
+https://towardsdatascience.com/choosing-the-right-gpu-for-deep-learning-on-aws-d69c157d8c86
