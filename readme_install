@@ -115,6 +115,7 @@ Collecting PyYAML==5.3.1
         File "<string>", line 2, in <module>
 
 
+ sudo apt-get update
 
 
 
