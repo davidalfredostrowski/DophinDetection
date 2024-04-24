@@ -73,8 +73,46 @@ Collecting pycocotools==2.0
 
 ## dropped out...
 
+(base) ubuntu@ip-172-31-31-28:~/DolphinDetection$ pip install Cython
+Collecting Cython
+  Using cached Cython-3.0.10-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+Installing collected packages: Cython
+Successfully installed Cython-3.0.10
 
 
+          import numpy as np
+      ModuleNotFoundError: No module named 'numpy'
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+
+pip install numpy
+
+
+### third time of the 'requirements' file
+
+
+Collecting PyYAML==5.3.1
+  Downloading PyYAML-5.3.1.tar.gz (269 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 269.4/269.4 kB 53.1 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [36 lines of output]
+      /home/ubuntu/miniconda3/lib/python3.8/site-packages/setuptools/config/setupcfg.py:508: SetuptoolsDeprecationWarning: The license_file parameter is deprecated, use license_files instead.
+        warnings.warn(msg, warning_class)
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
 
 
 
@@ -82,5 +120,5 @@ Collecting pycocotools==2.0
 
 
 ref:
-
+https://stackoverflow.com/questions/43982543/importerror-no-module-named-cython
 https://medium.com/@anarmammadli/how-to-install-conda-on-ubuntu-b6e67f15a4dd
