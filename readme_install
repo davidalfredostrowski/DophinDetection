@@ -120,7 +120,42 @@ Collecting PyYAML==5.3.1
 
  sudo apt-get update
 
+#### now try with 
+#### t2.xlarge EC2 instance
 
+
+
+    1  ls
+    2  mkdir DolphinDetection/
+    3  wget https://repo.anaconda.com/miniconda/Miniconda3-py38_23.3.1-0-Linux-x86_64.sh
+    4  bash Miniconda3-py38_23.3.1-0-Linux-x86_64.sh
+
+
+##### now start a new terminal!!!
+
+
+ ls
+    2  conda
+    3  ls
+    4  cd DolphinDetection/
+    5  conda create -n dol python=3.8
+    6  conda activate dol
+    7  vi requirements.txt
+    8  pip install -r requirements.txt         # install packages
+    9  pip install Cython
+   10  pip install numpy
+   11  pip install -r requirements.txt         # install packages
+   12  vi requirements.txt
+   13  pip install -r requirements.txt         # install packages
+   14  vi requirements.txt
+   15  pip install -r requirements.txt         # install packages
+   16  sudo  apt-get update
+   17  sudo apt-get -y install gcc
+   18  pip install -r requirements.txt         # install packages
+   19  yum install gcc-c++
+   20  sudo apt install g++
+   21  pip install -r requirements.txt         # install packages
+   22  history
 
 
 ref:
