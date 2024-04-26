@@ -298,6 +298,29 @@ Collecting PyYAML==5.3.1
    71  sudo apt install libsm6 libxext6 libxrender-dev
 
 
+(dol) ubuntu@ip-172-31-18-238:~/test/DolphinDetection$ python app.py --env prod --http_ip 35.90.58.57 --http_port 8080 --cd_id 0 --dt_id 0 --enable 5 --use_sm 5 --send_msg --log_level INFO
+Traceback (most recent call last):
+  File "app.py", line 18, in <module>
+    import detection.monitor
+  File "/home/ubuntu/test/DolphinDetection/detection/__init__.py", line 14, in <module>
+    from .detector import *
+  File "/home/ubuntu/test/DolphinDetection/detection/detector.py", line 15, in <module>
+    from utils import *
+  File "/home/ubuntu/test/DolphinDetection/utils/__init__.py", line 14, in <module>
+    from .crop import *
+  File "/home/ubuntu/test/DolphinDetection/utils/crop.py", line 18, in <module>
+    import cv2
+  File "/home/ubuntu/miniconda3/envs/dol/lib/python3.8/site-packages/cv2/__init__.py", line 190, in <module>
+    bootstrap()
+  File "/home/ubuntu/miniconda3/envs/dol/lib/python3.8/site-packages/cv2/__init__.py", line 184, in bootstrap
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):
+  File "/home/ubuntu/miniconda3/envs/dol/lib/python3.8/site-packages/cv2/__init__.py", line 37, in __load_extra_py_code_for_module
+    py_module = importlib.import_module(module_name)
+  File "/home/ubuntu/miniconda3/envs/dol/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/ubuntu/miniconda3/envs/dol/lib/python3.8/site-packages/cv2/typing/__init__.py", line 156, in <module>
+    Prim = _typing.Union[cv2.gapi.wip.draw.Text, cv2.gapi.wip.draw.Circle, cv2.gapi.wip.draw.Image, cv2.gapi.wip.draw.Line, cv2.gapi.wip.draw.Rect, cv2.gapi.wip.draw.Mosaic, cv2.gapi.wip.draw.Poly]
+AttributeError: module 'cv2.gapi.wip.draw' has no attribute 'Text'
 
 
 
